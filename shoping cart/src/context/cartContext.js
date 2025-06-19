@@ -4,16 +4,9 @@ import {useContext,createContext} from 'react'
 
 export const CartContext = createContext({
 
-    item:[
-        {
-            id:'1',
-            name:"item",
-            quantity:"1"
-        }
-    ],
-
-    addToCart:()=>{},
-    updateQuantity:(id)=>{},
+   cart:[],
+    addToCart:(product)=>{},
+    updateQuantity:(id,quantity)=>{},
     deleteItem:(id)=>{}
 })
 
