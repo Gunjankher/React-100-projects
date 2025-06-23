@@ -4,7 +4,7 @@ import {createContext,useContext} from 'react'
 export const movieContext = createContext({
 favorites:[],
 addToFavorites:(movie)=>{},
-RemoveFromFavorites:(id)=>{}
+removeFromFavorites:(id)=>{}
 
 })
 
